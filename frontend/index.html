@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Alquiler de Coches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Plataforma de Alquiler de Coches</h1>
+  
+  <h2>Registro de Usuarios</h2>
+  <form id="registerForm">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" required><br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" required><br>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" required><br>
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <h2>Gestión de Coches</h2>
+  <form id="carForm">
+    <label for="brand">Marca:</label>
+    <input type="text" id="brand" required><br>
+    <label for="model">Modelo:</label>
+    <input type="text" id="model" required><br>
+    <label for="year">Año:</label>
+    <input type="number" id="year" required><br>
+    <label for="mileage">Kilometraje:</label>
+    <input type="number" id="mileage" required><br>
+    <label for="pricePerDay">Precio por día:</label>
+    <input type="number" id="pricePerDay" required><br>
+    <button type="submit">Agregar Coche</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

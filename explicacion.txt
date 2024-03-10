@@ -1,0 +1,17 @@
+Backend:
+
+El backend está construido utilizando Node.js y Express.
+Utiliza una base de datos MongoDB para almacenar la información de los usuarios y los coches disponibles para alquiler.
+El archivo server.js define las rutas de la API REST para manejar las solicitudes de registro de usuarios y agregado de coches.
+Cuando un usuario envía un formulario de registro o un formulario para agregar un coche, el backend recibe los datos, valida la información y la almacena en la base de datos utilizando los modelos definidos en los archivos user.js y car.js.
+El backend también proporciona una lógica de manejo de errores y envía respuestas adecuadas a las solicitudes del frontend.
+
+
+Frontend:
+
+El frontend está construido utilizando HTML, CSS y JavaScript.
+La página principal de la aplicación está definida en el archivo index.html, que contiene formularios para el registro de usuarios y la gestión de coches.
+El archivo script.js contiene la lógica JavaScript para enviar solicitudes al backend cuando se envían los formularios.
+Los estilos CSS para dar formato a la página están definidos en el archivo style.css.
+Cuando un usuario completa un formulario y lo envía, JavaScript captura los datos del formulario, los serializa en formato JSON y los envía al backend a través de solicitudes HTTP utilizando la función fetch.
+Después de recibir una respuesta del backend, el frontend muestra mensajes de éxito o error al usuario según corresponda.
